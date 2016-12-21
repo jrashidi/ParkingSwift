@@ -7,21 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D04FE9351DF7470500BE53F2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D04FE9341DF7470500BE53F2 /* GoogleService-Info.plist */; };
+		D04FE9371DFB844D00BE53F2 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D04FE9361DFB844D00BE53F2 /* CoreLocation.framework */; };
+		D04FE9391DFED33C00BE53F2 /* SubmitLocationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04FE9381DFED33C00BE53F2 /* SubmitLocationController.swift */; };
+		D08FA9291E09954400B272A7 /* LocationsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08FA9281E09954400B272A7 /* LocationsModel.swift */; };
+		D0B9CF8F1E06FE9B0030683B /* GetParkingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B9CF8E1E06FE9B0030683B /* GetParkingController.swift */; };
+		D0B9CF911E06FEA80030683B /* SetParkingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B9CF901E06FEA80030683B /* SetParkingController.swift */; };
+		D0D427D01E0AB8090095584B /* MarkerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D427CF1E0AB8090095584B /* MarkerView.swift */; };
 		D0FC33181DF5DF2200DB85D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FC33171DF5DF2200DB85D8 /* AppDelegate.swift */; };
-		D0FC331A1DF5DF2200DB85D8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FC33191DF5DF2200DB85D8 /* ViewController.swift */; };
-		D0FC331D1DF5DF2200DB85D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0FC331B1DF5DF2200DB85D8 /* Main.storyboard */; };
+		D0FC331A1DF5DF2200DB85D8 /* MasterMapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FC33191DF5DF2200DB85D8 /* MasterMapController.swift */; };
 		D0FC331F1DF5DF2200DB85D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0FC331E1DF5DF2200DB85D8 /* Assets.xcassets */; };
 		D0FC33221DF5DF2200DB85D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0FC33201DF5DF2200DB85D8 /* LaunchScreen.storyboard */; };
+		D0FC332A1DF5E32F00DB85D8 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FC33291DF5E32F00DB85D8 /* LoginController.swift */; };
+		D0FC332D1DF6DEE000DB85D8 /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FC332C1DF6DEE000DB85D8 /* RegisterController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6362E5674D2337A73A1D566F /* Pods-roundTwo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-roundTwo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-roundTwo/Pods-roundTwo.debug.xcconfig"; sourceTree = "<group>"; };
+		7D14AB8B308A42F0A425679F /* Pods-roundTwo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-roundTwo.release.xcconfig"; path = "Pods/Target Support Files/Pods-roundTwo/Pods-roundTwo.release.xcconfig"; sourceTree = "<group>"; };
+		D04FE9341DF7470500BE53F2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D04FE9361DFB844D00BE53F2 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		D04FE9381DFED33C00BE53F2 /* SubmitLocationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubmitLocationController.swift; sourceTree = "<group>"; };
+		D08FA9281E09954400B272A7 /* LocationsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsModel.swift; sourceTree = "<group>"; };
+		D0B9CF8E1E06FE9B0030683B /* GetParkingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetParkingController.swift; sourceTree = "<group>"; };
+		D0B9CF901E06FEA80030683B /* SetParkingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetParkingController.swift; sourceTree = "<group>"; };
+		D0D427CF1E0AB8090095584B /* MarkerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarkerView.swift; sourceTree = "<group>"; };
 		D0FC33141DF5DF2200DB85D8 /* roundTwo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = roundTwo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0FC33171DF5DF2200DB85D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D0FC33191DF5DF2200DB85D8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D0FC331C1DF5DF2200DB85D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D0FC33191DF5DF2200DB85D8 /* MasterMapController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterMapController.swift; sourceTree = "<group>"; };
 		D0FC331E1DF5DF2200DB85D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D0FC33211DF5DF2200DB85D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D0FC33231DF5DF2200DB85D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0FC33291DF5E32F00DB85D8 /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		D0FC332C1DF6DEE000DB85D8 /* RegisterController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +47,52 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D04FE9371DFB844D00BE53F2 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B2B7CFE4D6D9C49C498C7333 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D04FE9361DFB844D00BE53F2 /* CoreLocation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D0B9CF881E05A8D20030683B /* Model  */ = {
+			isa = PBXGroup;
+			children = (
+				D08FA9281E09954400B272A7 /* LocationsModel.swift */,
+			);
+			name = "Model ";
+			sourceTree = "<group>";
+		};
+		D0B9CF8D1E05B8850030683B /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				D0FC33171DF5DF2200DB85D8 /* AppDelegate.swift */,
+			);
+			name = Delegates;
+			sourceTree = "<group>";
+		};
+		D0D427CE1E0AB7E60095584B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D0D427CF1E0AB8090095584B /* MarkerView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		D0FC330B1DF5DF2200DB85D8 = {
 			isa = PBXGroup;
 			children = (
 				D0FC33161DF5DF2200DB85D8 /* roundTwo */,
 				D0FC33151DF5DF2200DB85D8 /* Products */,
+				D2D2C1B2D215174699BA0553 /* Pods */,
+				B2B7CFE4D6D9C49C498C7333 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +107,38 @@
 		D0FC33161DF5DF2200DB85D8 /* roundTwo */ = {
 			isa = PBXGroup;
 			children = (
-				D0FC33171DF5DF2200DB85D8 /* AppDelegate.swift */,
-				D0FC33191DF5DF2200DB85D8 /* ViewController.swift */,
-				D0FC331B1DF5DF2200DB85D8 /* Main.storyboard */,
+				D0D427CE1E0AB7E60095584B /* View */,
+				D0B9CF881E05A8D20030683B /* Model  */,
+				D0FC332B1DF6DEC600DB85D8 /* Controllers  */,
+				D0B9CF8D1E05B8850030683B /* Delegates */,
 				D0FC331E1DF5DF2200DB85D8 /* Assets.xcassets */,
 				D0FC33201DF5DF2200DB85D8 /* LaunchScreen.storyboard */,
 				D0FC33231DF5DF2200DB85D8 /* Info.plist */,
+				D04FE9341DF7470500BE53F2 /* GoogleService-Info.plist */,
 			);
 			path = roundTwo;
+			sourceTree = "<group>";
+		};
+		D0FC332B1DF6DEC600DB85D8 /* Controllers  */ = {
+			isa = PBXGroup;
+			children = (
+				D0FC33291DF5E32F00DB85D8 /* LoginController.swift */,
+				D0FC332C1DF6DEE000DB85D8 /* RegisterController.swift */,
+				D0FC33191DF5DF2200DB85D8 /* MasterMapController.swift */,
+				D0B9CF901E06FEA80030683B /* SetParkingController.swift */,
+				D0B9CF8E1E06FE9B0030683B /* GetParkingController.swift */,
+				D04FE9381DFED33C00BE53F2 /* SubmitLocationController.swift */,
+			);
+			name = "Controllers ";
+			sourceTree = "<group>";
+		};
+		D2D2C1B2D215174699BA0553 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6362E5674D2337A73A1D566F /* Pods-roundTwo.debug.xcconfig */,
+				7D14AB8B308A42F0A425679F /* Pods-roundTwo.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +148,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D0FC33261DF5DF2200DB85D8 /* Build configuration list for PBXNativeTarget "roundTwo" */;
 			buildPhases = (
+				5A2D6DAFE79AB4D27414897A /* [CP] Check Pods Manifest.lock */,
 				D0FC33101DF5DF2200DB85D8 /* Sources */,
 				D0FC33111DF5DF2200DB85D8 /* Frameworks */,
 				D0FC33121DF5DF2200DB85D8 /* Resources */,
+				350CA8DBA2FFB469A57D9A91 /* [CP] Embed Pods Frameworks */,
+				4F13628F7B5CD01BA1699405 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -125,33 +205,80 @@
 			files = (
 				D0FC33221DF5DF2200DB85D8 /* LaunchScreen.storyboard in Resources */,
 				D0FC331F1DF5DF2200DB85D8 /* Assets.xcassets in Resources */,
-				D0FC331D1DF5DF2200DB85D8 /* Main.storyboard in Resources */,
+				D04FE9351DF7470500BE53F2 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		350CA8DBA2FFB469A57D9A91 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-roundTwo/Pods-roundTwo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4F13628F7B5CD01BA1699405 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-roundTwo/Pods-roundTwo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5A2D6DAFE79AB4D27414897A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D0FC33101DF5DF2200DB85D8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0FC331A1DF5DF2200DB85D8 /* ViewController.swift in Sources */,
+				D0FC332D1DF6DEE000DB85D8 /* RegisterController.swift in Sources */,
+				D0B9CF911E06FEA80030683B /* SetParkingController.swift in Sources */,
+				D0FC331A1DF5DF2200DB85D8 /* MasterMapController.swift in Sources */,
+				D04FE9391DFED33C00BE53F2 /* SubmitLocationController.swift in Sources */,
+				D0D427D01E0AB8090095584B /* MarkerView.swift in Sources */,
+				D0B9CF8F1E06FE9B0030683B /* GetParkingController.swift in Sources */,
+				D0FC332A1DF5E32F00DB85D8 /* LoginController.swift in Sources */,
 				D0FC33181DF5DF2200DB85D8 /* AppDelegate.swift in Sources */,
+				D08FA9291E09954400B272A7 /* LocationsModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		D0FC331B1DF5DF2200DB85D8 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D0FC331C1DF5DF2200DB85D8 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		D0FC33201DF5DF2200DB85D8 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -256,6 +383,7 @@
 		};
 		D0FC33271DF5DF2200DB85D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6362E5674D2337A73A1D566F /* Pods-roundTwo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = roundTwo/Info.plist;
@@ -268,6 +396,7 @@
 		};
 		D0FC33281DF5DF2200DB85D8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D14AB8B308A42F0A425679F /* Pods-roundTwo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = roundTwo/Info.plist;
@@ -297,6 +426,7 @@
 				D0FC33281DF5DF2200DB85D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
