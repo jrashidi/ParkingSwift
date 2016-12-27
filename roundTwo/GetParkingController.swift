@@ -66,6 +66,7 @@ class GetParkingController: UIViewController, CLLocationManagerDelegate, GMSMapV
         Window.layer.cornerRadius = 5
         Window.alpha = 0.75
         Window.backgroundColor = UIColor.darkGray
+        Window.setupButton() 
         Window.note = infoWindow.note
         return Window
         }
