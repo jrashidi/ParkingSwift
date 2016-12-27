@@ -9,7 +9,7 @@
 import UIKit
 import GoogleMaps
 
-class Location: NSObject {
+class Location: UIView {
     var latitude: Double?
     var longitude: Double?
     var meter: Int?

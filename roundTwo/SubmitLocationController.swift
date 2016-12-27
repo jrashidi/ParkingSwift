@@ -9,12 +9,11 @@
 import UIKit
 import Firebase
 
-class SubmitLocationController: UIViewController {
+class SubmitLocationController: UIViewController, UITextViewDelegate {
     
     var latitude: Double = 0.0
     var longitude: Double = 0.0
     var meter: Bool = true
-    var date = NSDate()
     
     
     let submitBox: UIView = {
@@ -51,9 +50,10 @@ class SubmitLocationController: UIViewController {
     
     func sendLocation() {
         
+            let date = NSDate()
             let ref = FIRDatabase.database().reference(fromURL: "https://roundtwo-9526a.firebaseio.com/")
             let locationsReference = ref.child("Locations").childByAutoId()
-            let values = ["latitude": latitude, "longitude": longitude, "meter": meter, "text": noteBox.text] as [String : Any]
+            let values = ["latitude": latitude, "longitude": longitude, "meter": meter, "text": noteBox.text, "date": date] as [String : Any]
             locationsReference.updateChildValues(values, withCompletionBlock: { (error, ref) in
                 if error != nil {
                     print("Error Found")
@@ -81,7 +81,7 @@ class SubmitLocationController: UIViewController {
         }
     }
     
-    let noteBox: UITextView = {
+    lazy var noteBox: UITextView = {
         let note = UITextView()
         note.text = "Anything Else?"
         note.textColor = UIColor.lightGray
@@ -92,9 +92,6 @@ class SubmitLocationController: UIViewController {
         return note
     }()
     
-    func textViewDidBeginEditing(_ textView: UITextView) {
-
-    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -105,6 +102,7 @@ class SubmitLocationController: UIViewController {
         
         view.addSubview(submitBox)
         setupSubmitBox()
+        noteBox.delegate = self
     }
 
     func setupSubmitBox() {
@@ -138,5 +136,19 @@ class SubmitLocationController: UIViewController {
         noteBox.widthAnchor.constraint(equalTo: submitBox.widthAnchor, constant: -20).isActive = true
         noteBox.heightAnchor.constraint(equalToConstant: 100).isActive = true
 
+    }
+    
+    func textViewDidBeginEditing(_ textView: UITextView) {
+        if noteBox.text == "Anything Else?"{
+            noteBox.text = nil
+            noteBox.textColor = UIColor.black
+        }
+    }
+    
+    func textViewDidEndEditing(_ textView: UITextView) {
+        if noteBox.text.isEmpty {
+            noteBox.text = "Anything Else"
+            noteBox.textColor = UIColor.lightGray
+        }
     }
 }

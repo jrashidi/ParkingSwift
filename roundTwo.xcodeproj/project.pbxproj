@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D04FE9351DF7470500BE53F2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D04FE9341DF7470500BE53F2 /* GoogleService-Info.plist */; };
 		D04FE9371DFB844D00BE53F2 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D04FE9361DFB844D00BE53F2 /* CoreLocation.framework */; };
 		D04FE9391DFED33C00BE53F2 /* SubmitLocationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04FE9381DFED33C00BE53F2 /* SubmitLocationController.swift */; };
 		D08FA9291E09954400B272A7 /* LocationsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08FA9281E09954400B272A7 /* LocationsModel.swift */; };
 		D0B9CF8F1E06FE9B0030683B /* GetParkingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B9CF8E1E06FE9B0030683B /* GetParkingController.swift */; };
 		D0B9CF911E06FEA80030683B /* SetParkingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B9CF901E06FEA80030683B /* SetParkingController.swift */; };
+		D0D1D7AF1E12E04000F36BAA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D0D1D7AE1E12E04000F36BAA /* GoogleService-Info.plist */; };
 		D0D427D01E0AB8090095584B /* MarkerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D427CF1E0AB8090095584B /* MarkerView.swift */; };
+		D0E757CD1E0C1AA400FBE600 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E757CC1E0C1AA400FBE600 /* ProfileController.swift */; };
 		D0FC33181DF5DF2200DB85D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FC33171DF5DF2200DB85D8 /* AppDelegate.swift */; };
 		D0FC331A1DF5DF2200DB85D8 /* MasterMapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FC33191DF5DF2200DB85D8 /* MasterMapController.swift */; };
 		D0FC331F1DF5DF2200DB85D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0FC331E1DF5DF2200DB85D8 /* Assets.xcassets */; };
@@ -25,13 +26,14 @@
 /* Begin PBXFileReference section */
 		6362E5674D2337A73A1D566F /* Pods-roundTwo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-roundTwo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-roundTwo/Pods-roundTwo.debug.xcconfig"; sourceTree = "<group>"; };
 		7D14AB8B308A42F0A425679F /* Pods-roundTwo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-roundTwo.release.xcconfig"; path = "Pods/Target Support Files/Pods-roundTwo/Pods-roundTwo.release.xcconfig"; sourceTree = "<group>"; };
-		D04FE9341DF7470500BE53F2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D04FE9361DFB844D00BE53F2 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		D04FE9381DFED33C00BE53F2 /* SubmitLocationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubmitLocationController.swift; sourceTree = "<group>"; };
 		D08FA9281E09954400B272A7 /* LocationsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsModel.swift; sourceTree = "<group>"; };
 		D0B9CF8E1E06FE9B0030683B /* GetParkingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetParkingController.swift; sourceTree = "<group>"; };
 		D0B9CF901E06FEA80030683B /* SetParkingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetParkingController.swift; sourceTree = "<group>"; };
+		D0D1D7AE1E12E04000F36BAA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D0D427CF1E0AB8090095584B /* MarkerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarkerView.swift; sourceTree = "<group>"; };
+		D0E757CC1E0C1AA400FBE600 /* ProfileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
 		D0FC33141DF5DF2200DB85D8 /* roundTwo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = roundTwo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0FC33171DF5DF2200DB85D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D0FC33191DF5DF2200DB85D8 /* MasterMapController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterMapController.swift; sourceTree = "<group>"; };
@@ -113,8 +115,8 @@
 				D0B9CF8D1E05B8850030683B /* Delegates */,
 				D0FC331E1DF5DF2200DB85D8 /* Assets.xcassets */,
 				D0FC33201DF5DF2200DB85D8 /* LaunchScreen.storyboard */,
+				D0D1D7AE1E12E04000F36BAA /* GoogleService-Info.plist */,
 				D0FC33231DF5DF2200DB85D8 /* Info.plist */,
-				D04FE9341DF7470500BE53F2 /* GoogleService-Info.plist */,
 			);
 			path = roundTwo;
 			sourceTree = "<group>";
@@ -128,6 +130,7 @@
 				D0B9CF901E06FEA80030683B /* SetParkingController.swift */,
 				D0B9CF8E1E06FE9B0030683B /* GetParkingController.swift */,
 				D04FE9381DFED33C00BE53F2 /* SubmitLocationController.swift */,
+				D0E757CC1E0C1AA400FBE600 /* ProfileController.swift */,
 			);
 			name = "Controllers ";
 			sourceTree = "<group>";
@@ -205,7 +208,7 @@
 			files = (
 				D0FC33221DF5DF2200DB85D8 /* LaunchScreen.storyboard in Resources */,
 				D0FC331F1DF5DF2200DB85D8 /* Assets.xcassets in Resources */,
-				D04FE9351DF7470500BE53F2 /* GoogleService-Info.plist in Resources */,
+				D0D1D7AF1E12E04000F36BAA /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +272,7 @@
 				D0FC331A1DF5DF2200DB85D8 /* MasterMapController.swift in Sources */,
 				D04FE9391DFED33C00BE53F2 /* SubmitLocationController.swift in Sources */,
 				D0D427D01E0AB8090095584B /* MarkerView.swift in Sources */,
+				D0E757CD1E0C1AA400FBE600 /* ProfileController.swift in Sources */,
 				D0B9CF8F1E06FE9B0030683B /* GetParkingController.swift in Sources */,
 				D0FC332A1DF5E32F00DB85D8 /* LoginController.swift in Sources */,
 				D0FC33181DF5DF2200DB85D8 /* AppDelegate.swift in Sources */,
@@ -312,7 +316,8 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
+				COPY_PHASE_STRIP = YES;
+				"COPY_PHASE_STRIP[sdk=*]" = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -361,7 +366,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
+				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;

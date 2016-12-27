@@ -10,6 +10,8 @@ import UIKit
 import Firebase
 
 class RegisterController: UIViewController {
+    
+    let points = 0
 
     let emailContainer: UIView = {
         let ic = UIView()
@@ -73,22 +75,39 @@ class RegisterController: UIViewController {
 
     func login() {
         let main = MapController()
+        let nav = UINavigationController(rootViewController: main)
+        createUser()
+        addUserToDataBase()
+        self.present(nav, animated: true, completion: nil)
+    }
+    
+    func createUser() {
         if (passwordField.text != confirmPasswordField.text) {
             let alert = UIAlertController(title: "Problem With Password", message: "Passwords Do Not Match", preferredStyle: .alert)
             let defaultAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
             alert.addAction(defaultAction)
             present(alert, animated: true, completion: nil)
         } else {
-        guard let email = emailField.text, let password = passwordField.text else {return}
-        FIRAuth.auth()?.createUser(withEmail: email , password: password, completion: { (user: FIRUser?, error) in
+            guard let email = emailField.text, let password = passwordField.text else {return}
+            FIRAuth.auth()?.createUser(withEmail: email , password: password, completion: { (user: FIRUser?, error) in
+                if error != nil {
+                    print(error)
+                    return
+            }})}
+    }
+    
+    func addUserToDataBase() {
+        guard let email = emailField.text  else {return}
+        let ref = FIRDatabase.database().reference(fromURL: "https://roundtwo-9526a.firebaseio.com/")
+        let userReference = ref.child("User").childByAutoId()
+        let values = ["email": email, "points": points] as [String: Any]
+        userReference.updateChildValues(values, withCompletionBlock: { (error, ref) in
             if error != nil {
-                print(error)
-                return
+                print("Error Adding User to DataBase")
             } else {
-               self.present(main, animated: true, completion: nil)
+                print("User Added To DataBase")
             }
-        }
-            )}
+        })
     }
     
 
@@ -122,7 +141,7 @@ class RegisterController: UIViewController {
         
         emailField.leftAnchor.constraint(equalTo: emailContainer.leftAnchor, constant: 12).isActive = true
         emailField.topAnchor.constraint(equalTo: emailContainer.topAnchor, constant: 12).isActive = true
-        emailField.widthAnchor.constraint(equalTo: emailContainer.widthAnchor)
+        emailField.rightAnchor.constraint(equalTo: emailContainer.rightAnchor)
         emailField.heightAnchor.constraint(equalTo: emailContainer.heightAnchor)
     }
     
@@ -139,7 +158,7 @@ class RegisterController: UIViewController {
         
         passwordField.leftAnchor.constraint(equalTo: passwordContainer.leftAnchor, constant: 12).isActive = true
         passwordField.topAnchor.constraint(equalTo: passwordContainer.topAnchor, constant: 12).isActive = true
-        passwordField.widthAnchor.constraint(equalTo: passwordContainer.widthAnchor).isActive = true
+        passwordField.rightAnchor.constraint(equalTo: passwordContainer.rightAnchor).isActive = true
         passwordField.heightAnchor.constraint(equalTo: passwordContainer.heightAnchor)
         
         confirmPasswordContainer.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true

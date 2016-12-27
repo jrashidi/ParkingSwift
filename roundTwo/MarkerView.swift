@@ -10,9 +10,7 @@ import UIKit
 
 class MarkerInfo: UIView {
     
-    var time: Int?
-    var note: String?
-    
-    
+    var time: UILabel?
+    var note: UILabel?
     
 }

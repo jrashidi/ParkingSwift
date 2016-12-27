@@ -15,7 +15,6 @@ class GetParkingController: UIViewController, CLLocationManagerDelegate, GMSMapV
     
     var mapView: GMSMapView!
     var marker: GMSMarker!
-    var regionMonitor: CLCircularRegion!
     var latitude = Double()
     var longitude = Double()
     var locationManager: CLLocationManager!
@@ -47,6 +46,7 @@ class GetParkingController: UIViewController, CLLocationManagerDelegate, GMSMapV
                 
                 let position = CLLocationCoordinate2D(latitude: location.latitude!, longitude: location.longitude!)
                 let marker = GMSMarker(position: position)
+                marker.infoWindowAnchor = CGPoint(x: 0.5, y: 0.2)
                 marker.map = self.mapView
                 
             }
@@ -54,7 +54,26 @@ class GetParkingController: UIViewController, CLLocationManagerDelegate, GMSMapV
            }, withCancel: nil)
 
     }
-
+    
+    func mapView(_ mapView: GMSMapView, markerInfoWindow marker: GMSMarker) -> UIView? {
+        
+        var Window: Location!
+        
+        for infoWindow in locations {
+        let testFrame : CGRect = CGRect(x: 100, y: 200, width: 200, height: 200)
+        Window = Location(frame: testFrame)
+        Window.layer.borderWidth = 1
+        Window.layer.cornerRadius = 5
+        Window.alpha = 0.75
+        Window.backgroundColor = UIColor.darkGray
+        Window.note = infoWindow.note
+        return Window
+        }
+        
+        return Window
+    }
+    
+    
     // Handle Location Information
     func determineMyCurrentLocation() {
         locationManager = CLLocationManager()
