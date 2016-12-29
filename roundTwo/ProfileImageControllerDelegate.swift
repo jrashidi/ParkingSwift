@@ -21,7 +21,19 @@ extension ProfileController: UIImagePickerControllerDelegate, UINavigationContro
     }
     
     func sendImageToDataBase() {
-        let storage = FIR
+        let storage = FIRStorage.storage().reference().child("MyImage.PNG")
+        
+        if let uploadedData = UIImagePNGRepresentation(ProfilePic.image!){
+        storage.put(uploadedData, metadata:  nil, completion: { (metadata, error) in
+            
+            if error != nil {
+                print(error)
+                return
+            }
+            
+            print (metadata)
+        })
+        }
     }
 
     //Delegate method for canceled event of UIImagePickerController
@@ -48,6 +60,9 @@ extension ProfileController: UIImagePickerControllerDelegate, UINavigationContro
         if let imageSelected = selectedImageFromPicker {
             ProfilePic.image = imageSelected
         }
+        
+        sendImageToDataBase()
+        
         dismiss(animated: true, completion: nil)
     }
     

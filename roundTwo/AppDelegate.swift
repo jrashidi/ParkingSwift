@@ -11,6 +11,7 @@ import Firebase
 import GoogleMaps
 
 
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -22,7 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         FIRApp.configure()
         GMSServices.provideAPIKey("AIzaSyA-4HsGHYNGtSxH6dnu-oXl4W_xcQftW0A")
-        
+
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
         window?.rootViewController = UINavigationController(rootViewController: MapController())
