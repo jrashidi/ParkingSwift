@@ -13,6 +13,7 @@ import CoreLocation
 
 class GetParkingController: UIViewController, CLLocationManagerDelegate, GMSMapViewDelegate {
     
+    var Window: Location!
     var mapView: GMSMapView!
     var marker: GMSMarker!
     var latitude = Double()
@@ -55,21 +56,49 @@ class GetParkingController: UIViewController, CLLocationManagerDelegate, GMSMapV
 
     }
     
+    lazy var editLocation: UIButton = {
+        let button = UIButton()
+        button.tintColor = UIColor.clear
+        button.setTitle("Location Not Available", for: .normal)
+        button.setTitleColor(UIColor.white, for: .normal)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.layer.cornerRadius = 5
+        button.addTarget(self, action: #selector(editDataBase), for: .touchUpInside)
+        return button
+    }()
+    
+    func editDataBase() {
+        
+    }
+    
+    var time: UILabel = {
+        let time = UILabel()
+        time.textColor = UIColor.white
+        time.translatesAutoresizingMaskIntoConstraints = false
+        return time
+    }()
+    
+    func setupView() {
+        time.leftAnchor.constraint(equalTo: Window.leftAnchor, constant: 5).isActive = true
+        time.topAnchor.constraint(equalTo: Window.topAnchor, constant: -5).isActive = true
+        time.heightAnchor.constraint(equalTo: Window.heightAnchor, multiplier: 1/5).isActive = true
+        time.widthAnchor.constraint(equalTo: Window.widthAnchor, constant: -20).isActive = true
+    }
+    
+    
     func mapView(_ mapView: GMSMapView, markerInfoWindow marker: GMSMarker) -> UIView? {
+
         
-        var Window: Location!
-        
-        for infoWindow in locations {
         let testFrame : CGRect = CGRect(x: 100, y: 200, width: 200, height: 200)
         Window = Location(frame: testFrame)
         Window.layer.borderWidth = 1
         Window.layer.cornerRadius = 5
-        Window.alpha = 0.75
         Window.backgroundColor = UIColor.darkGray
-        Window.setupButton() 
-        Window.note = infoWindow.note
-        return Window
-        }
+        time.text = "Time: "
+            
+        Window.addSubview(time)
+        Window.addSubview(editLocation)
+        setupView()
         
         return Window
     }

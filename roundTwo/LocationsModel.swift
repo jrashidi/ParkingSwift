@@ -17,6 +17,8 @@ class Location: UIView {
     
     lazy var editLocation: UIButton = {
         let button = UIButton()
+        button.backgroundColor = UIColor.cyan
+        button.setTitleColor(UIColor.blue, for: UIControlState.highlighted)
         button.setTitle("Edit Location", for: UIControlState.highlighted)
         button.translatesAutoresizingMaskIntoConstraints = false
         button.layer.cornerRadius = 5

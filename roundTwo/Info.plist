@@ -2,8 +2,12 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>We need permission to allow you to choose a picture</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>We would like to access your location while using GeoPlay</string>
+	<key>NSAppleMusicUsageDescription</key>
+	<string>We need permission to allow you to choose a picture</string>
 	<key>NSLocationAlwaysUsageDescription</key>
 	<string>We would like to access your location while using GeoPlay</string>
 	<key>CFBundleDevelopmentRegion</key>
