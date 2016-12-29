@@ -33,11 +33,7 @@ class SubmitLocationController: UIViewController, UITextViewDelegate {
         cancel.translatesAutoresizingMaskIntoConstraints = false
         return cancel
     }()
-    
-    func cancelView() {
-        dismiss(animated: true, completion: nil)
-    }
-    
+
     lazy var submit: UIButton = {
         let button = UIButton()
         button.setTitle("Submit", for: .normal)
@@ -48,38 +44,12 @@ class SubmitLocationController: UIViewController, UITextViewDelegate {
         return button
     }()
     
-    func sendLocation() {
-        
-            let date = NSDate()
-            let ref = FIRDatabase.database().reference(fromURL: "https://roundtwo-9526a.firebaseio.com/")
-            let locationsReference = ref.child("Locations").childByAutoId()
-            let values = ["latitude": latitude, "longitude": longitude, "meter": meter, "text": noteBox.text, "date": date] as [String : Any]
-            locationsReference.updateChildValues(values, withCompletionBlock: { (error, ref) in
-                if error != nil {
-                    print("Error Found")
-                    return
-                } else {
-                    print("DataBase Loaded")
-                    self.dismiss(animated: true, completion: nil)
-                }
-        })
-        }
-    
-    
     lazy var meterSegementedControl: UISegmentedControl = {
         let meter = UISegmentedControl(items: ["No Meter", "Meter"])
         meter.translatesAutoresizingMaskIntoConstraints = false
         meter.addTarget(self, action: #selector(determineMeter), for: .valueChanged)
         return meter
     }()
-    
-    func determineMeter() {
-        if meterSegementedControl.selectedSegmentIndex == 0 {
-            meter = true
-        } else {
-            meter = false
-        }
-    }
     
     lazy var noteBox: UITextView = {
         let note = UITextView()
@@ -95,8 +65,6 @@ class SubmitLocationController: UIViewController, UITextViewDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-    
-
         view.backgroundColor = UIColor.lightGray
         view.isOpaque = true
         
@@ -138,17 +106,4 @@ class SubmitLocationController: UIViewController, UITextViewDelegate {
 
     }
     
-    func textViewDidBeginEditing(_ textView: UITextView) {
-        if noteBox.text == "Anything Else?"{
-            noteBox.text = nil
-            noteBox.textColor = UIColor.black
-        }
-    }
-    
-    func textViewDidEndEditing(_ textView: UITextView) {
-        if noteBox.text.isEmpty {
-            noteBox.text = "Anything Else"
-            noteBox.textColor = UIColor.lightGray
-        }
-    }
 }

@@ -77,7 +77,6 @@ class RegisterController: UIViewController {
         let main = MapController()
         let nav = UINavigationController(rootViewController: main)
         createUser()
-        addUserToDataBase()
         self.present(nav, animated: true, completion: nil)
     }
     
@@ -92,14 +91,17 @@ class RegisterController: UIViewController {
             FIRAuth.auth()?.createUser(withEmail: email , password: password, completion: { (user: FIRUser?, error) in
                 if error != nil {
                     print(error)
-                    return
-            }})}
+            }
+            guard let uid = user?.uid else {return}
+            self.addUserToDataBase(uid: (uid))
+            
+            })}
     }
     
-    func addUserToDataBase() {
+    func addUserToDataBase(uid: String) {
         guard let email = emailField.text  else {return}
         let ref = FIRDatabase.database().reference(fromURL: "https://roundtwo-9526a.firebaseio.com/")
-        let userReference = ref.child("User").childByAutoId()
+        let userReference = ref.child("User").child(uid)
         let values = ["email": email, "points": points] as [String: Any]
         userReference.updateChildValues(values, withCompletionBlock: { (error, ref) in
             if error != nil {

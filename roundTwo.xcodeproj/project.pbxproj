@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D02FAC311E14833700A1D9A4 /* ProfileImageControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02FAC301E14833700A1D9A4 /* ProfileImageControllerDelegate.swift */; };
+		D02FAC311E14833700A1D9A4 /* ProfileControllerHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02FAC301E14833700A1D9A4 /* ProfileControllerHandler.swift */; };
+		D031030E1E153E73007F1C57 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D031030D1E153E73007F1C57 /* UserModel.swift */; };
+		D03103101E154468007F1C57 /* SubmitLocationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D031030F1E154468007F1C57 /* SubmitLocationHandler.swift */; };
 		D04FE9371DFB844D00BE53F2 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D04FE9361DFB844D00BE53F2 /* CoreLocation.framework */; };
 		D04FE9391DFED33C00BE53F2 /* SubmitLocationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04FE9381DFED33C00BE53F2 /* SubmitLocationController.swift */; };
 		D08FA9291E09954400B272A7 /* LocationsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08FA9281E09954400B272A7 /* LocationsModel.swift */; };
@@ -25,7 +27,9 @@
 
 /* Begin PBXFileReference section */
 		35665EE197801B53114EF0FE /* Pods-roundTwo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-roundTwo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-roundTwo/Pods-roundTwo.debug.xcconfig"; sourceTree = "<group>"; };
-		D02FAC301E14833700A1D9A4 /* ProfileImageControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileImageControllerDelegate.swift; sourceTree = "<group>"; };
+		D02FAC301E14833700A1D9A4 /* ProfileControllerHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileControllerHandler.swift; sourceTree = "<group>"; };
+		D031030D1E153E73007F1C57 /* UserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		D031030F1E154468007F1C57 /* SubmitLocationHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubmitLocationHandler.swift; sourceTree = "<group>"; };
 		D04FE9361DFB844D00BE53F2 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		D04FE9381DFED33C00BE53F2 /* SubmitLocationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubmitLocationController.swift; sourceTree = "<group>"; };
 		D08FA9281E09954400B272A7 /* LocationsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsModel.swift; sourceTree = "<group>"; };
@@ -68,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				D08FA9281E09954400B272A7 /* LocationsModel.swift */,
+				D031030D1E153E73007F1C57 /* UserModel.swift */,
 			);
 			name = "Model ";
 			sourceTree = "<group>";
@@ -83,6 +88,8 @@
 		D0D427CE1E0AB7E60095584B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D0E757CC1E0C1AA400FBE600 /* ProfileController.swift */,
+				D04FE9381DFED33C00BE53F2 /* SubmitLocationController.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -128,9 +135,8 @@
 				D0FC33191DF5DF2200DB85D8 /* MasterMapController.swift */,
 				D0B9CF901E06FEA80030683B /* SetParkingController.swift */,
 				D0B9CF8E1E06FE9B0030683B /* GetParkingController.swift */,
-				D04FE9381DFED33C00BE53F2 /* SubmitLocationController.swift */,
-				D0E757CC1E0C1AA400FBE600 /* ProfileController.swift */,
-				D02FAC301E14833700A1D9A4 /* ProfileImageControllerDelegate.swift */,
+				D02FAC301E14833700A1D9A4 /* ProfileControllerHandler.swift */,
+				D031030F1E154468007F1C57 /* SubmitLocationHandler.swift */,
 			);
 			name = "Controllers ";
 			sourceTree = "<group>";
@@ -179,6 +185,7 @@
 				TargetAttributes = {
 					D0FC33131DF5DF2200DB85D8 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = P97UF592V5;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -268,8 +275,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0FC332D1DF6DEE000DB85D8 /* RegisterController.swift in Sources */,
+				D03103101E154468007F1C57 /* SubmitLocationHandler.swift in Sources */,
 				D0B9CF911E06FEA80030683B /* SetParkingController.swift in Sources */,
-				D02FAC311E14833700A1D9A4 /* ProfileImageControllerDelegate.swift in Sources */,
+				D02FAC311E14833700A1D9A4 /* ProfileControllerHandler.swift in Sources */,
 				D0FC331A1DF5DF2200DB85D8 /* MasterMapController.swift in Sources */,
 				D04FE9391DFED33C00BE53F2 /* SubmitLocationController.swift in Sources */,
 				D0E757CD1E0C1AA400FBE600 /* ProfileController.swift in Sources */,
@@ -277,6 +285,7 @@
 				D0FC332A1DF5E32F00DB85D8 /* LoginController.swift in Sources */,
 				D0FC33181DF5DF2200DB85D8 /* AppDelegate.swift in Sources */,
 				D08FA9291E09954400B272A7 /* LocationsModel.swift in Sources */,
+				D031030E1E153E73007F1C57 /* UserModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -391,6 +400,7 @@
 			baseConfigurationReference = 35665EE197801B53114EF0FE /* Pods-roundTwo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = P97UF592V5;
 				INFOPLIST_FILE = roundTwo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.GeoPlay.roundTwo;
@@ -404,6 +414,7 @@
 			baseConfigurationReference = D8529AB9F0551D9A4DD3D669 /* Pods-roundTwo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = P97UF592V5;
 				INFOPLIST_FILE = roundTwo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.GeoPlay.roundTwo;

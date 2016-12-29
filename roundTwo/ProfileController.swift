@@ -32,7 +32,7 @@ class ProfileController: UIViewController {
     }()
     
     // Label for UserName
-    let nameLabel: UILabel = {
+    var nameLabel: UILabel = {
         let label = UILabel()
         label.text = "Your UserName"
         label.textColor = UIColor.lightGray
@@ -52,18 +52,7 @@ class ProfileController: UIViewController {
         setupView()
     }
     
-    // Log User out
-    func handleLogout() {
-        let login = LoginController()
-        present(login, animated: true, completion: nil)
-    }
-    
-    // Return User to Map
-    func returnToMasterMap() {
-        let map = MapController()
-        let nav = UINavigationController(rootViewController: map)
-        present(nav, animated: true, completion: nil)
-    }
+
     
     //Sets up View of Controller
     func setupView() {
