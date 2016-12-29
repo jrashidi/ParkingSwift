@@ -68,7 +68,7 @@ class MapController: UIViewController, CLLocationManagerDelegate, GMSMapViewDele
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
-        
+            
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Profile", style: .plain, target: self, action: #selector(sendToProfile))
         navigationItem.titleView = mapSegementedController
         
@@ -82,9 +82,4 @@ class MapController: UIViewController, CLLocationManagerDelegate, GMSMapViewDele
         present(navProfile, animated: true, completion: nil)
     }
     
-    
-    
-
-
 }
-

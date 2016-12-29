@@ -7,44 +7,49 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D02FAC311E14833700A1D9A4 /* ProfileControllerHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02FAC301E14833700A1D9A4 /* ProfileControllerHandler.swift */; };
+		D02FAC311E14833700A1D9A4 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02FAC301E14833700A1D9A4 /* ProfileController.swift */; };
 		D031030E1E153E73007F1C57 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D031030D1E153E73007F1C57 /* UserModel.swift */; };
-		D03103101E154468007F1C57 /* SubmitLocationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D031030F1E154468007F1C57 /* SubmitLocationHandler.swift */; };
+		D03103101E154468007F1C57 /* SubmitLocationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D031030F1E154468007F1C57 /* SubmitLocationController.swift */; };
+		D03103121E154614007F1C57 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03103111E154614007F1C57 /* LoginController.swift */; };
+		D03103141E154689007F1C57 /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03103131E154689007F1C57 /* RegisterController.swift */; };
 		D04FE9371DFB844D00BE53F2 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D04FE9361DFB844D00BE53F2 /* CoreLocation.framework */; };
-		D04FE9391DFED33C00BE53F2 /* SubmitLocationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04FE9381DFED33C00BE53F2 /* SubmitLocationController.swift */; };
+		D04FE9391DFED33C00BE53F2 /* SubmitLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04FE9381DFED33C00BE53F2 /* SubmitLocationView.swift */; };
 		D08FA9291E09954400B272A7 /* LocationsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08FA9281E09954400B272A7 /* LocationsModel.swift */; };
 		D0B9CF8F1E06FE9B0030683B /* GetParkingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B9CF8E1E06FE9B0030683B /* GetParkingController.swift */; };
 		D0B9CF911E06FEA80030683B /* SetParkingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B9CF901E06FEA80030683B /* SetParkingController.swift */; };
 		D0D1D7AF1E12E04000F36BAA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D0D1D7AE1E12E04000F36BAA /* GoogleService-Info.plist */; };
-		D0E757CD1E0C1AA400FBE600 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E757CC1E0C1AA400FBE600 /* ProfileController.swift */; };
+		D0E757CD1E0C1AA400FBE600 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E757CC1E0C1AA400FBE600 /* ProfileView.swift */; };
 		D0FC33181DF5DF2200DB85D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FC33171DF5DF2200DB85D8 /* AppDelegate.swift */; };
 		D0FC331A1DF5DF2200DB85D8 /* MasterMapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FC33191DF5DF2200DB85D8 /* MasterMapController.swift */; };
 		D0FC331F1DF5DF2200DB85D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0FC331E1DF5DF2200DB85D8 /* Assets.xcassets */; };
 		D0FC33221DF5DF2200DB85D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0FC33201DF5DF2200DB85D8 /* LaunchScreen.storyboard */; };
-		D0FC332A1DF5E32F00DB85D8 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FC33291DF5E32F00DB85D8 /* LoginController.swift */; };
-		D0FC332D1DF6DEE000DB85D8 /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FC332C1DF6DEE000DB85D8 /* RegisterController.swift */; };
+		D0FC332A1DF5E32F00DB85D8 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FC33291DF5E32F00DB85D8 /* LoginView.swift */; };
+		D0FC332D1DF6DEE000DB85D8 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FC332C1DF6DEE000DB85D8 /* RegisterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		35665EE197801B53114EF0FE /* Pods-roundTwo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-roundTwo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-roundTwo/Pods-roundTwo.debug.xcconfig"; sourceTree = "<group>"; };
-		D02FAC301E14833700A1D9A4 /* ProfileControllerHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileControllerHandler.swift; sourceTree = "<group>"; };
+		D02FAC301E14833700A1D9A4 /* ProfileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
 		D031030D1E153E73007F1C57 /* UserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
-		D031030F1E154468007F1C57 /* SubmitLocationHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubmitLocationHandler.swift; sourceTree = "<group>"; };
+		D031030F1E154468007F1C57 /* SubmitLocationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubmitLocationController.swift; sourceTree = "<group>"; };
+		D03103111E154614007F1C57 /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		D03103131E154689007F1C57 /* RegisterController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
 		D04FE9361DFB844D00BE53F2 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		D04FE9381DFED33C00BE53F2 /* SubmitLocationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubmitLocationController.swift; sourceTree = "<group>"; };
+		D04FE9381DFED33C00BE53F2 /* SubmitLocationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubmitLocationView.swift; sourceTree = "<group>"; };
 		D08FA9281E09954400B272A7 /* LocationsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsModel.swift; sourceTree = "<group>"; };
+		D0A69EAB1E15592900E392B5 /* roundTwo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = roundTwo.entitlements; sourceTree = "<group>"; };
 		D0B9CF8E1E06FE9B0030683B /* GetParkingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetParkingController.swift; sourceTree = "<group>"; };
 		D0B9CF901E06FEA80030683B /* SetParkingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetParkingController.swift; sourceTree = "<group>"; };
 		D0D1D7AE1E12E04000F36BAA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../GoogleService-Info.plist"; sourceTree = "<group>"; };
-		D0E757CC1E0C1AA400FBE600 /* ProfileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
+		D0E757CC1E0C1AA400FBE600 /* ProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		D0FC33141DF5DF2200DB85D8 /* roundTwo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = roundTwo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0FC33171DF5DF2200DB85D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D0FC33191DF5DF2200DB85D8 /* MasterMapController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterMapController.swift; sourceTree = "<group>"; };
 		D0FC331E1DF5DF2200DB85D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D0FC33211DF5DF2200DB85D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D0FC33231DF5DF2200DB85D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D0FC33291DF5E32F00DB85D8 /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
-		D0FC332C1DF6DEE000DB85D8 /* RegisterController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
+		D0FC33291DF5E32F00DB85D8 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		D0FC332C1DF6DEE000DB85D8 /* RegisterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		D8529AB9F0551D9A4DD3D669 /* Pods-roundTwo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-roundTwo.release.xcconfig"; path = "Pods/Target Support Files/Pods-roundTwo/Pods-roundTwo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -88,8 +93,10 @@
 		D0D427CE1E0AB7E60095584B /* View */ = {
 			isa = PBXGroup;
 			children = (
-				D0E757CC1E0C1AA400FBE600 /* ProfileController.swift */,
-				D04FE9381DFED33C00BE53F2 /* SubmitLocationController.swift */,
+				D0E757CC1E0C1AA400FBE600 /* ProfileView.swift */,
+				D04FE9381DFED33C00BE53F2 /* SubmitLocationView.swift */,
+				D0FC33291DF5E32F00DB85D8 /* LoginView.swift */,
+				D0FC332C1DF6DEE000DB85D8 /* RegisterView.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -115,8 +122,9 @@
 		D0FC33161DF5DF2200DB85D8 /* roundTwo */ = {
 			isa = PBXGroup;
 			children = (
-				D0D427CE1E0AB7E60095584B /* View */,
+				D0A69EAB1E15592900E392B5 /* roundTwo.entitlements */,
 				D0B9CF881E05A8D20030683B /* Model  */,
+				D0D427CE1E0AB7E60095584B /* View */,
 				D0FC332B1DF6DEC600DB85D8 /* Controllers  */,
 				D0B9CF8D1E05B8850030683B /* Delegates */,
 				D0FC331E1DF5DF2200DB85D8 /* Assets.xcassets */,
@@ -130,13 +138,13 @@
 		D0FC332B1DF6DEC600DB85D8 /* Controllers  */ = {
 			isa = PBXGroup;
 			children = (
-				D0FC33291DF5E32F00DB85D8 /* LoginController.swift */,
-				D0FC332C1DF6DEE000DB85D8 /* RegisterController.swift */,
-				D0FC33191DF5DF2200DB85D8 /* MasterMapController.swift */,
 				D0B9CF901E06FEA80030683B /* SetParkingController.swift */,
 				D0B9CF8E1E06FE9B0030683B /* GetParkingController.swift */,
-				D02FAC301E14833700A1D9A4 /* ProfileControllerHandler.swift */,
-				D031030F1E154468007F1C57 /* SubmitLocationHandler.swift */,
+				D0FC33191DF5DF2200DB85D8 /* MasterMapController.swift */,
+				D02FAC301E14833700A1D9A4 /* ProfileController.swift */,
+				D031030F1E154468007F1C57 /* SubmitLocationController.swift */,
+				D03103111E154614007F1C57 /* LoginController.swift */,
+				D03103131E154689007F1C57 /* RegisterController.swift */,
 			);
 			name = "Controllers ";
 			sourceTree = "<group>";
@@ -187,6 +195,11 @@
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = P97UF592V5;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -274,15 +287,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0FC332D1DF6DEE000DB85D8 /* RegisterController.swift in Sources */,
-				D03103101E154468007F1C57 /* SubmitLocationHandler.swift in Sources */,
+				D0FC332D1DF6DEE000DB85D8 /* RegisterView.swift in Sources */,
+				D03103101E154468007F1C57 /* SubmitLocationController.swift in Sources */,
 				D0B9CF911E06FEA80030683B /* SetParkingController.swift in Sources */,
-				D02FAC311E14833700A1D9A4 /* ProfileControllerHandler.swift in Sources */,
+				D03103121E154614007F1C57 /* LoginController.swift in Sources */,
+				D02FAC311E14833700A1D9A4 /* ProfileController.swift in Sources */,
 				D0FC331A1DF5DF2200DB85D8 /* MasterMapController.swift in Sources */,
-				D04FE9391DFED33C00BE53F2 /* SubmitLocationController.swift in Sources */,
-				D0E757CD1E0C1AA400FBE600 /* ProfileController.swift in Sources */,
+				D04FE9391DFED33C00BE53F2 /* SubmitLocationView.swift in Sources */,
+				D0E757CD1E0C1AA400FBE600 /* ProfileView.swift in Sources */,
 				D0B9CF8F1E06FE9B0030683B /* GetParkingController.swift in Sources */,
-				D0FC332A1DF5E32F00DB85D8 /* LoginController.swift in Sources */,
+				D0FC332A1DF5E32F00DB85D8 /* LoginView.swift in Sources */,
+				D03103141E154689007F1C57 /* RegisterController.swift in Sources */,
 				D0FC33181DF5DF2200DB85D8 /* AppDelegate.swift in Sources */,
 				D08FA9291E09954400B272A7 /* LocationsModel.swift in Sources */,
 				D031030E1E153E73007F1C57 /* UserModel.swift in Sources */,
@@ -400,6 +415,7 @@
 			baseConfigurationReference = 35665EE197801B53114EF0FE /* Pods-roundTwo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = roundTwo/roundTwo.entitlements;
 				DEVELOPMENT_TEAM = P97UF592V5;
 				INFOPLIST_FILE = roundTwo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -414,6 +430,7 @@
 			baseConfigurationReference = D8529AB9F0551D9A4DD3D669 /* Pods-roundTwo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = roundTwo/roundTwo.entitlements;
 				DEVELOPMENT_TEAM = P97UF592V5;
 				INFOPLIST_FILE = roundTwo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

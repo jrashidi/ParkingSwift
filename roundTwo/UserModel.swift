@@ -10,6 +10,7 @@ import UIKit
 
 class UserModel {
     var email: String?
-    var iamge: String?
+    var image: String?
+    var points: Int?
     
 }
