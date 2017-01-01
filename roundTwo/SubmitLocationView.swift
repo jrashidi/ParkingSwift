@@ -51,16 +51,16 @@ class SubmitLocationController: UIViewController, UITextViewDelegate {
         return meter
     }()
     
-    lazy var noteBox: UITextView = {
-        let note = UITextView()
-        note.text = "Anything Else?"
-        note.textColor = UIColor.lightGray
-        note.layer.cornerRadius = 5
-        note.layer.borderColor = UIColor.gray.cgColor
-        note.layer.borderWidth = 1
-        note.translatesAutoresizingMaskIntoConstraints = false
-        return note
-    }()
+//    lazy var noteBox: UITextView = {
+//        let note = UITextView()
+//        note.text = "Anything Else?"
+//        note.textColor = UIColor.lightGray
+//        note.layer.cornerRadius = 5
+//        note.layer.borderColor = UIColor.gray.cgColor
+//        note.layer.borderWidth = 1
+//        note.translatesAutoresizingMaskIntoConstraints = false
+//        return note
+//    }()
     
 
     override func viewDidLoad() {
@@ -70,7 +70,7 @@ class SubmitLocationController: UIViewController, UITextViewDelegate {
         
         view.addSubview(submitBox)
         setupSubmitBox()
-        noteBox.delegate = self
+//        noteBox.delegate = self
     }
 
     func setupSubmitBox() {
@@ -82,10 +82,10 @@ class SubmitLocationController: UIViewController, UITextViewDelegate {
         submitBox.addSubview(submit)
         submitBox.addSubview(cancel)
         submitBox.addSubview(meterSegementedControl)
-        submitBox.addSubview(noteBox)
+//        submitBox.addSubview(noteBox)
         
         submit.centerXAnchor.constraint(equalTo: submitBox.centerXAnchor).isActive = true
-        submit.topAnchor.constraint(equalTo: noteBox.bottomAnchor, constant: 15).isActive = true
+        submit.topAnchor.constraint(equalTo: meterSegementedControl.bottomAnchor, constant: 15).isActive = true
         submit.widthAnchor.constraint(equalTo: submitBox.widthAnchor, constant: -20).isActive = true
         submit.heightAnchor.constraint(equalToConstant: 50).isActive = true
         
@@ -99,10 +99,10 @@ class SubmitLocationController: UIViewController, UITextViewDelegate {
         meterSegementedControl.widthAnchor.constraint(equalToConstant: 300).isActive = true
         meterSegementedControl.heightAnchor.constraint(equalToConstant: 30).isActive = true
         
-        noteBox.centerXAnchor.constraint(equalTo: submitBox.centerXAnchor).isActive = true
-        noteBox.topAnchor.constraint(equalTo: meterSegementedControl.bottomAnchor, constant: 10).isActive = true
-        noteBox.widthAnchor.constraint(equalTo: submitBox.widthAnchor, constant: -20).isActive = true
-        noteBox.heightAnchor.constraint(equalToConstant: 100).isActive = true
+//        noteBox.centerXAnchor.constraint(equalTo: submitBox.centerXAnchor).isActive = true
+//        noteBox.topAnchor.constraint(equalTo: meterSegementedControl.bottomAnchor, constant: 10).isActive = true
+//        noteBox.widthAnchor.constraint(equalTo: submitBox.widthAnchor, constant: -20).isActive = true
+//        noteBox.heightAnchor.constraint(equalToConstant: 100).isActive = true
 
     }
     

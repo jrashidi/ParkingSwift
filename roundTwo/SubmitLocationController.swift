@@ -19,26 +19,27 @@ extension SubmitLocationController {
         }
     }
     
-    func textViewDidBeginEditing(_ textView: UITextView) {
-        if noteBox.text == "Anything Else?"{
-            noteBox.text = nil
-            noteBox.textColor = UIColor.black
-        }
-    }
-    
-    func textViewDidEndEditing(_ textView: UITextView) {
-        if noteBox.text.isEmpty {
-            noteBox.text = "Anything Else"
-            noteBox.textColor = UIColor.lightGray
-        }
-    }
+//    func textViewDidBeginEditing(_ textView: UITextView) {
+//        if noteBox.text == "Anything Else?"{
+//            noteBox.text = nil
+//            noteBox.textColor = UIColor.black
+//        }
+//    }
+//    
+//    func textViewDidEndEditing(_ textView: UITextView) {
+//        if noteBox.text.isEmpty {
+//            noteBox.text = "Anything Else"
+//            noteBox.textColor = UIColor.lightGray
+//        }
+//    }
     
     func sendLocation() {
         
         let date = NSDate()
         let ref = FIRDatabase.database().reference(fromURL: "https://roundtwo-9526a.firebaseio.com/")
         let locationsReference = ref.child("Locations").childByAutoId()
-        let values = ["latitude": latitude, "longitude": longitude, "meter": meter, "text": noteBox.text, "date": date] as [String : Any]
+//        let values = ["latitude": latitude, "longitude": longitude, "meter": meter, "text": noteBox.text, "date": date] as [String : Any]
+          let values = ["latitude": latitude, "longitude": longitude, "meter": meter, "date": date] as [String : Any]
         locationsReference.updateChildValues(values, withCompletionBlock: { (error, ref) in
             if error != nil {
                 print("Error Found")

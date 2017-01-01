@@ -193,7 +193,7 @@
 				TargetAttributes = {
 					D0FC33131DF5DF2200DB85D8 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = P97UF592V5;
+						DevelopmentTeam = G5BFMV4BHP;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Keychain = {
@@ -416,10 +416,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = roundTwo/roundTwo.entitlements;
-				DEVELOPMENT_TEAM = P97UF592V5;
+				DEVELOPMENT_TEAM = G5BFMV4BHP;
 				INFOPLIST_FILE = roundTwo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.GeoPlay.roundTwo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Justin.ParkingFinder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -431,10 +432,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = roundTwo/roundTwo.entitlements;
-				DEVELOPMENT_TEAM = P97UF592V5;
+				DEVELOPMENT_TEAM = G5BFMV4BHP;
 				INFOPLIST_FILE = roundTwo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.GeoPlay.roundTwo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Justin.ParkingFinder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};

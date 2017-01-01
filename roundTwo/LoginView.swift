@@ -9,7 +9,7 @@
 import UIKit
 import Firebase
 
-class LoginController: UIViewController {
+class LoginController: UIViewController, UITextFieldDelegate {
     
     
     let emailContainer: UIView = {
@@ -36,6 +36,7 @@ class LoginController: UIViewController {
         ef.translatesAutoresizingMaskIntoConstraints = false
         return ef
     }()
+    
     
     let passwordField: UITextField = {
         let pf = UITextField()
@@ -67,6 +68,8 @@ class LoginController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        emailField.delegate = self
+        passwordField.delegate = self 
         
         view.backgroundColor = UIColor.cyan
         

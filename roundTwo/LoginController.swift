@@ -34,7 +34,15 @@ extension LoginController {
     func register() {
         let register = RegisterController()
         present(register, animated: true, completion: nil)
-        
     }
-
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.resignFirstResponder()
+        return false
+    }
+    
+    func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
+        self.resignFirstResponder()
+        return true
+    }
 }
